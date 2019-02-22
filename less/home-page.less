@@ -11,6 +11,10 @@
     p {
       padding:0 15px;
     }
+
+    .intro-img {
+      width: 100%;
+    }
   
   }
 
@@ -47,39 +51,55 @@
     justify-content: center;
 
     @media @mobile {
-      display: block;
+      flex-wrap: wrap;
+      padding: 5px 15px;
     }
 
     .walk-text {
       width: 50%;
 
+      @media @mobile {
+        width: 100%;
+      }
+
       h3 {
         margin-bottom: 10px;
+
+        @media @mobile {
+          margin: 25px 0;
+        }
+
       }
 
       p {
         margin-bottom: 26px;
       }
 
-      @media @mobile {
-        width: 80%;
-        margin: 0 auto 30px;
-      }
-
       .btn {
-        .button-creator1(120px, 45px, @btn-bg-color, @porcelain, 2.0rem);
+        .button-creator1(120px, 45px, @btn-bg-color, @porcelain, 1.8rem);
       }
     }
-    
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
       
+      @media @mobile {
+        width: 100%;
+        order: -1;
+        margin-top: 10px;
+        margin-left: 0;
+      } 
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+        @media @mobile {
+          order: -1;
+        }
+
       }
     }
   }
