@@ -193,7 +193,7 @@ p {
 .main-navigation .nav-container .nav {
   display: flex;
   justify-content: space-evenly;
-  margin: 20px 335px;
+  margin: 20px 225px;
 }
 @media (max-width: 500px) {
   .main-navigation .nav-container .nav {
@@ -248,6 +248,11 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    display: block;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
