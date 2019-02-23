@@ -207,6 +207,11 @@ p {
   text-decoration: none;
   color: black;
 }
+.main-navigation .nav-container .nav .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
