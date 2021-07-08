@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive websites are sites built for desktop viewports that have been retrofitted with CSS media queries at certain breakpoints to offer functionality at lower screen resolutions, such as on mobile devices. Adaptive websites usually contain CSS that is patched directly to provide this functionality, leaving the media queries scattered throughout the file and may be confusing to other developers without detailed comments.
+
+Fully responsive websites are designed from the ground up to be viewable on most viewports, regardless of the type of device accessing the site or the parameters set by the client's browser's User Agent Styles. These sites are generally well-organized and easy to read, with all code being properly nested in its respective places. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first vs desktop first is simply a matter of organization. Some developers may choose to focus on one before the other, and some may choose to do the opposite. Both are acceptable practices, as they both strive to achieve the same purpose. It is, again, simply a matter of choice.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Given that the UAS has a base value of 16 px for the html property, 1 rem would be equal to 16 px. Therefore 62.5% of 1 rem would display as 10 px calculated in the browser.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a tool used by developers to more efficiently write CSS. By writing similar blocks of styles in one place on one page for a certain element, it becomes much easier to organize and visualize larger amounts of CSS. A precompiler will take this "shorthand" CSS that developers write and interpolate it automatically to one CSS file, which can be compiled normally by the browser.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I love the freedom it provides the developer. It is certainly a step in the right direction. Being able to intuitively work with your code gives you more room to be creative and reduces time spent translating creativity into code. I would say, however, that there are many quality-of-life changes that need to be addressed. But as with most open source material, it will advance at its own pace. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
